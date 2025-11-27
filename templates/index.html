@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body class="center-screen">
+
+<div class="glass-card" style="text-align:center; width:420px;">
+
+    <h1 class="title">🛡️ Secure Web Application</h1>
+
+    <p style="color:#c9f7ff; margin-bottom:25px;">
+        Experience a modern cybersecurity-authenticated system.  
+        Login securely with protected sessions.
+    </p>
+
+    <a href="/login" class="btn-primary" style="display:block; text-decoration:none; margin-bottom:10px;">
+        🔐 Go to Login
+    </a>
+
+    <a href="/register" class="btn-secondary" style="
+        display:block; 
+        padding:12px; 
+        border-radius:8px; 
+        background:#00eaff33; 
+        border:1px solid #00eaff; 
+        color:#00eaff;
+        text-decoration:none;">
+        ✨ Create New Account
+    </a>
+
+</div>
+<script src="{{ url_for('static', filename='js/animation.js') }}"></script>
+
+</body>
+</html>

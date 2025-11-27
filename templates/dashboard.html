@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard-center">
+
+    <div class="dashboard-box">
+
+        <h1 class="dash-title">Welcome, {{ username }} 👋</h1>
+
+        <div class="info-row">
+            <b>IP Address:</b> {{ ip }}
+        </div>
+
+        <div class="info-row">
+            <b>Session Status:</b> Secure ✓
+        </div>
+
+        <div class="info-row">
+            <b>Session ID:</b> {{ session_id }}
+        </div>
+
+        <a href="/logout" class="logout-btn">Logout</a>
+
+    </div>
+</div>
+
+<!-- ✅ Correct place for animation script -->
+<script src="{{ url_for('static', filename='js/animation.js') }}"></script>
+
+</body>
+</html>

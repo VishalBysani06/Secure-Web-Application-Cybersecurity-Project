@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+<body class="center-screen">
+
+<div class="glass-card">
+
+    <h2 class="title">Register</h2>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Enter Username" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <button class="btn-primary">Register</button>
+    </form>
+
+    <a href="/login" class="link">Already have an account?</a>
+
+</div>
+<script src="{{ url_for('static', filename='js/animation.js') }}"></script>
+
+</body>
+
+</html>
